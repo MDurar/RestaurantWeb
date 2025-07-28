@@ -14,6 +14,38 @@
  }
 /*** Spinner End ***/
 
+/*** Hero ***/
+
+/* Hero bölümündeki en dıştaki div'in arka plan rengini değiştirme */
+.container-fluid.bg-light.py-6.my-6.mt-0 {
+    background-color: #ffffff !important; /* İstediğiniz mavi tonu */
+    /* Veya istediğiniz başka bir HEX kodu */
+}
+
+/* Butonların varsayılan renklerini ve kenarlıklarını değiştirme */
+.btn-primary {
+    background-color: #7bb4f1 !important; /* Butonun arka plan rengi (örneğin daha koyu bir mavi) */
+    border-color: #007bff !important;     /* Butonun kenarlık rengi */
+    color: #FFFFFF !important;            /* Butonun metin rengi (örneğin beyaz) */
+}
+
+/* Butonun üzerine gelindiğinde (hover) renklerini değiştirme */
+.btn-primary:hover {
+    background-color: #0a58ca !important; /* Hover arka plan rengi (biraz daha koyu) */
+    border-color: #0a58ca !important;     /* Hover kenarlık rengi */
+    color: #FFFFFF !important;            /* Hover metin rengi */
+}
+
+/* Breadcrumb bağlantılarının rengini değiştirme */
+.breadcrumb-item a {
+    color: #7EC8E3 !important; /* İstediğiniz mavi tonu */
+}
+
+/* Eğer üzerine gelince rengini değiştirmek isterseniz (isteğe bağlı) */
+.breadcrumb-item a:hover {
+    color: #000000 !important; /* Örneğin, üzerine gelince siyah olsun */
+}
+/*** Hero End ***/
 
 .back-to-top {
     position: fixed;
@@ -163,7 +195,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(212, 167, 98, 0.7);
+    background:#5ab8da;
     border-radius: 8px;
     transition: 0.5s;
     opacity: 0;
@@ -174,6 +206,17 @@ h4, h5, h6, .h4, .h5, .h6 {
     opacity: 1;
 }
 /*** Events End ***/
+
+/*** About Us ***/
+/* "About Us" etiketinin arka plan rengini değiştirme */
+.container-fluid.py-6 .container .row .col-lg-7 small.bg-light {
+    background-color: #ffffff !important; /* İstediğiniz yeni arka plan rengi */
+}
+
+/* "About Us" etiketinin kenarlık rengini değiştirme */
+.container-fluid.py-6 .container .row .col-lg-7 small.border-primary {
+    border-color: var(--bs-primary) !important; /* Birincil renk değişkenini kullanır */
+}
 
 
 /*** service start ***/
@@ -197,6 +240,11 @@ h4, h5, h6, .h4, .h5, .h6 {
     transition: 1s;
 }
 
+/* "Our Services" etiketinin kenarlık rengini değiştirme */
+.text-center small.border-primary {
+    border-color: var(--bs-primary) !important;
+}
+
 .service-item:hover .service-content::after {
     height: 100%;
     opacity: 1;
@@ -213,7 +261,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .service-item:hover .service-content-icon i {
-    color: var(--bs-dark) !important;
+    color: #7EC8E3 !important; /* İkon rengini istediğiniz açık mavi tonuna çevirir */
 }
 
 .service-item:hover .service-content-icon p {
@@ -228,96 +276,71 @@ h4, h5, h6, .h4, .h5, .h6 {
 .service-item .service-content-icon a.btn-primary {
     transition: 1s !important;
 }
+
+/* Sadece bu spesifik ikonun rengini siyah yapmak için */
+.service-item .service-content-icon .fa-cheese {
+    color: #000000 !important; /* Siyah renk */
+}
+
+/* Eğer bu icon aynı zamanda bir Fas Ikonu olduğu için genel bir fas veya fa sınıfı varsa */
+.service-item .service-content-icon i.fas {
+    color: #000000 !important; /* Tüm service-item ikonlarını siyah yapar */
+}
+
+
+.body {
+    background-color: #FFFFFF; 
+}
 /*** Services End ***/
 
 
 /*** Menu Start ***/
+.menu {
+    background-color: #eefaff !important; /* İstediğiniz mavi tonu */
+}
+
 .menu .nav-item a.active {
-    background: var(--bs-primary) !important;
+    background: #b9e4f7 !important;
 }
 
 .menu .menu-item .border-bottom {
     border-bottom-style: dashed !important;
 }
+
+/* "Our Menu" etiketinin border rengini değiştirme */
+.menu .text-center small.border-primary {
+    border-color: var(--bs-primary) !important;
+    background-color: white;
+}
+
+/* "Starter", "Main Course" vb. sekmelerin border rengini değiştirme */
+.menu .nav-pills .nav-item a.border-primary {
+    border-color: var(--bs-primary) !important;
+}
 /*** Menu End ***/
 
-
-/*** Youtube Video start ***/
-.video {
-    position: relative;
-    height: 100%;
-    min-height: 400px;
-    background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(../img/fact.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 8px;
+/*** Fact Start ***/
+/* Faqt kutucuklarının arka plan rengini değiştirme */
+.faqt-item.bg-primary {
+    background-color: var(--bs-primary) !important; /* --bs-primary değişkenini kullanır */
+    /* Veya doğrudan bir HEX kodu kullanmak isterseniz: */
+    /* background-color: #7EC8E3 !important; */
 }
 
-.video .btn-play {
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    box-sizing: content-box;
-    display: block;
-    width: 32px;
-    height: 44px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    padding: 18px 20px 18px 28px;
+/* Ayrıca içindeki metinlerin (p etiketleri) renginin görünür olduğundan emin olun */
+.faqt-item p.text-dark {
+    color: #000000 !important; /* Siyah metin rengi, eğer okunaklı değilse */
+    /* Veya beyaz yapmak isterseniz: */
+    /* color: #FFFFFF !important; */
 }
 
-.video .btn-play:before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 100px;
-    height: 100px;
-    background: var(--bs-primary);
-    border-radius: 50%;
-    animation: pulse-border 1500ms ease-out infinite;
+/* İkonların renginin de beyaz olduğundan emin olun */
+.faqt-item i.text-white {
+    color: #000000 !important;
 }
+/*** Fact End ***/
 
-.video .btn-play:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 100px;
-    height: 100px;
-    background: var(--bs-white);
-    border-radius: 50%;
-    transition: all 200ms;
-}
 
-.video .btn-play img {
-    position: relative;
-    z-index: 3;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-}
-
-.video .btn-play span {
-    display: block;
-    position: relative;
-    z-index: 3;
-    width: 0;
-    height: 0;
-    border-left: 32px solid var(--bs-dark);
-    border-top: 22px solid transparent;
-    border-bottom: 22px solid transparent;
-}
 
 @keyframes pulse-border {
     0% {
@@ -439,8 +462,19 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 /*** testimonial Start ***/
 .testimonial-item {
-    border: 1px solid var(--bs-primary);
+    border: 2px solid var(--bs-primary);
     padding: 20px 20px;
+    background-color: #FFFFFF !important;
+}
+
+/* "Testimonial" etiketinin arka plan rengini değiştirme */
+.container-fluid.py-6 .container .text-center small.bg-light {
+    background-color: #FFFFFF !important; /* Arka plan rengini beyaz yapar */
+}
+
+/* "Testimonial" etiketinin kenarlık rengini değiştirme */
+.container-fluid.py-6 .container .text-center small.border-primary {
+    border-color: var(--bs-primary) !important; /* Birincil renk değişkenini kullanır */
 }
 
 .testimonial-carousel .owl-item img {
@@ -450,6 +484,11 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .testimonial-carousel.owl-rtl .testimonial-item {
     direction: ltr !important;
+}
+
+/* Testimonial bölümündeki en dıştaki kapsayıcının arka plan rengini beyaz yapar */
+.container-fluid.py-6 {
+    background-color: #FFFFFF !important; /* İstediğiniz beyaz renk */
 }
 /*** testimonial End ***/
 
@@ -466,8 +505,53 @@ h4, h5, h6, .h4, .h5, .h6 {
 .footer .footer-item a.text-body:hover {
     color: var(--bs-primary) !important;
 }
+
+/* "Explore" başlığının rengini değiştirme */
+.footer-item h1.text-primary {
+    color: #000000 !important; /* Başlığı siyah yapar */
+    /* Veya istediğiniz başka bir HEX kodu */
+}
+
+/* Bağlantıların (Home, About Us vb.) varsayılan metin rengini değiştirme */
+.footer-item a.text-body {
+    color: #000000 !important; /* Daha koyu gri bir metin rengi */
+    /* Veya istediğiniz başka bir HEX kodu */
+}
+
+/* Bağlantılardaki ikonların (fa-check) rengini değiştirme */
+.footer-item a.text-body i.fa-check.text-primary {
+    color: #000000 !important; /* İkonu siyah yapar */
+    /* Veya istediğiniz başka bir HEX kodu */
+}
+
+/* Bağlantıların üzerine gelindiğinde (hover) metin ve ikon rengini değiştirme */
+.footer-item a.text-body:hover {
+    color: var(--bs-primary) !important; /* Metin rengini birincil (mavi) yapar */
+}
+
+.footer-item a.text-body:hover i.fa-check {
+    color: var(--bs-primary) !important; /* İkon rengini birincil (mavi) yapar */
+}
+
+/* Eğer footer-item'in arka planını değiştirmek isterseniz */
+.footer-item {
+    background-color: #ffffff; /* Hafif gri bir arka plan */
+    /* Veya istediğiniz başka bir HEX kodu */
+}
 /*** Footer End ***/
 
+/*** Font ***/
+h1, h2, h3, .h1, .h2, .h3 {
+    font-family: 'Raleway', sans-serif !important;
+}
 
+h4, h5, h6, .h4, .h5, .h6 {
+    font-family: 'Raleway', sans-serif !important;
+}
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*** Font End ***/
 
