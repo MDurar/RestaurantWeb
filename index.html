@@ -45,30 +45,33 @@
 
 
         <!-- Navbar start -->
-        <div class="container-fluid nav-bar">
-            <div class="container">
-                <nav class="navbar navbar-light navbar-expand-lg py-4">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="text-primary fw-bold mb-0">
-                            <img src="img/logo.png" style="max-height: 100px; width: auto; display: block;">
-                        </h1>
-                    </a>
-                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars text-primary"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav mx-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link ">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="menu.html" class="nav-item nav-link">Menu</a>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+<div class="container-fluid nav-bar">
+  <div class="container">
+    <nav class="navbar navbar-light navbar-expand-lg py-4">
+      <a href="index.html" class="navbar-brand">
+        <h1 class="text-primary fw-bold mb-0">
+          <img src="img/logo.png" style="max-height: 100px; width: auto; display: block;">
+        </h1>
+      </a>
+      <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="fa fa-bars text-primary"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="service.html" class="nav-item nav-link">Services</a>
+          <a href="menu.html" class="nav-item nav-link">Menu</a>
+          <a href="contact.html" class="nav-item nav-link ">Contact</a>
         </div>
-        <!-- Navbar End -->
+
+        <!-- Dil Seçici (Dropdown buraya gelecek) -->
+        <div class="gtranslate_wrapper"></div>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- Navbar End -->
+
 
 
         <!-- Modal Search Start
@@ -96,7 +99,9 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-7 col-md-12">
                         <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to Anatolia</small>
-                        <h1 class="display-1 mb-4 animated bounceInDown">Book <span class="text-primary">Anatolia</span> For Your Dream Event</h1>
+                        <h1 class="display-1 mb-4 animated bounceInDown">
+  Book <span class="text-primary" translate="no">Anatolia</span> For Your Dream Event
+</h1>
                         <a href="tel:+905366388351" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Call Us</a>
                         <a href="about.html" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</a>
                     </div>
@@ -114,7 +119,7 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
-                        <img src="img/about.jpg" class="img-fluid rounded" alt="">
+                        <img src="img/sofra.jpeg" class="img-fluid rounded" alt="">
                     </div>
                     <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
                         <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About Us</small>
@@ -239,7 +244,7 @@
             </div>
 
 
-        < <!-- Menu Start -->
+         <!-- Menu Start -->
         <div class="container-fluid menu py-6">
             <div class="container">
                 <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
@@ -1099,5 +1104,15 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+  window.gtranslateSettings = {
+    "default_language": "en",
+    "detect_browser_language": true,
+    "languages": ["en", "tr", "pl", "ru", "de"],
+    "wrapper_selector": ".gtranslate_wrapper"
+  }
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
     </body>
 </html>
